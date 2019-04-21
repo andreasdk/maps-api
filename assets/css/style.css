@@ -14,3 +14,6 @@
   .navbar-light .navbar-nav .nav-link:visited {
     color: #fff;
     font-family: "Rubik", sans-serif; }
+
+#map {
+  height: 400px; }

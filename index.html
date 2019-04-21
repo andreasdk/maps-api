@@ -8,7 +8,27 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbarTrip">
+			<a class="navbar-brand" href="#hero">Trip Planner</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navLinks">
+				<ul class="navbar-nav">
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+						<a class="nav-link" href="#home">Home</a>
+					</li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+						<a class="nav-link" href="#how">How It Works</a>
+					</li>
+					<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+						<a class="nav-link" href="#maps">Map</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
 
 
@@ -20,5 +40,13 @@
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEVtPMmEAtDsuLS6Sn-7iPCGQh6-fxzew&libraries=places&region=GB&callback=initMap"></script>
 	<script src="assets/js/maps.js" async defer></script>
+		<script>
+		$(function () {
+			$(document).scroll(function(){
+				var $nav = $("#navbarTrip");
+				$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
+			})
+		})
+	</script>
 </body>
 </html>

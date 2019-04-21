@@ -1,0 +1,24 @@
+.navbar-light {
+	.navbar-brand {
+		color: #fff;
+		font-family: "Rubik", sans-serif;
+		&:hover {
+			color: #fff;
+			font-family: "Rubik", sans-serif;
+		}
+	}
+	.navbar-nav {
+		.nav-link {
+			color: #fff;
+			font-family: "Rubik", sans-serif;
+			&:hover {
+				color: #fff;
+				font-family: "Rubik", sans-serif;
+			}
+			&:visited {
+				color: #fff;
+				font-family: "Rubik", sans-serif;
+			}
+		}
+	}
+}

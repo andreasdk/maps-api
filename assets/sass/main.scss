@@ -23,6 +23,41 @@
 	}
 }
 
+/***Hero**/
+
+.hero {
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  h1 {
+    font-size: 5em;
+  }
+  .btn {
+    background-color: rgba(61, 90, 255, 0.85);
+    border: 3px solid #fff;
+    border-radius: .75em;
+    color: inherit;
+    display: block;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 1em;
+    text-decoration: none;
+    width: 200px;
+  }
+}
+
 #map {
   height: 400px;
 }

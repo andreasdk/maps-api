@@ -406,6 +406,10 @@ function initMap() {
 
       	var iconTd = document.createElement('td');
       	var nameTd = document.createElement('td');
+      	var btn = document.createElement('button');
+      	btn.type = "button"
+      	btn.className = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent";
+      	btn.innerHTML = "Add To List";
       	var icon = document.createElement('img');
       	icon.src = markerIcon;
       	icon.setAttribute('class', 'placeIcon');
@@ -415,6 +419,7 @@ function initMap() {
       	nameTd.appendChild(name);
       	tr.appendChild(iconTd);
       	tr.appendChild(nameTd);
+      	tr.appendChild(btn);
       	results.appendChild(tr);
       }
 

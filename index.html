@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbarTrip">
 			<a class="navbar-brand" href="#hero">Trip Planner</a>
@@ -35,7 +36,7 @@
 	<section class="hero" id="home">
 		<div class="hero-inner">
 			<h1 class="display-4">Trip Planner</h1>
-			<h4 class="display-1">Find a hotel for your trip</h2>
+			<h4 class="display-1">Find a hotel for your trip</h4>
 			<a href="#map" class="btn">Discover now</a>
 		</div>
 	</section>
@@ -48,63 +49,57 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12">
-				<div class="row">
-					<div class="col-sm-6">
-						<select id="country" class="form-control my-4">
-							<option value="all" selected>All</option>
-							<option value="au">Australia</option>
-							<option value="br">Brazil</option>
-							<option value="ca">Canada</option>
-							<option value="fr">France</option>
-							<option value="de">Germany</option>
-							<option value="mx">Mexico</option>
-							<option value="nz">New Zealand</option>
-							<option value="it">Italy</option>
-							<option value="za">South Africa</option>
-							<option value="es">Spain</option>
-							<option value="pt">Portugal</option>
-							<option value="us">U.S.A.</option>
-							<option value="uk">United Kingdom</option>
-						</select>
-					</div>
+			<div class="col-sm-6">
+				<select id="country" class="form-control my-4">
+					<option value="all" selected>All</option>
+					<option value="au">Australia</option>
+					<option value="br">Brazil</option>
+					<option value="ca">Canada</option>
+					<option value="fr">France</option>
+					<option value="de">Germany</option>
+					<option value="mx">Mexico</option>
+					<option value="nz">New Zealand</option>
+					<option value="it">Italy</option>
+					<option value="za">South Africa</option>
+					<option value="es">Spain</option>
+					<option value="pt">Portugal</option>
+					<option value="us">U.S.A.</option>
+					<option value="uk">United Kingdom</option>
+				</select>
+			</div>
+
+			<br>
+			<div class="col-6">
+				<div id="locationField">
+					<input id="autocomplete" type="text" class="form-control my-4" />
 				</div>
-				<div class="row">
-					<div class="col-12 col-sm-6">
-						<div id="locationField" class="mdl-textfield mdl-js-textfield" >
-							<input id="autocomplete" type="text" class="mdl-textfield__input" />
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 my-3">
-						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="accommodation">
-							<input type="radio" id="accommodation" class="mdl-radio__button" name="options" value="1" checked>
-							<span class="mdl-radio__label">Accommodation</span>
-						</label>
-						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="bars">
-							<input type="radio" id="bars" class="mdl-radio__button" name="options" value="2">
-							<span class="mdl-radio__label">Bars</span>
-						</label>
-						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="restaurants">
-							<input type="radio" id="restaurants" class="mdl-radio__button" name="options" value="3">
-							<span class="mdl-radio__label">Restaurants</span>
-						</label>
-						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="attractions">
-							<input type="radio" id="attractions" class="mdl-radio__button" name="options" value="4">
-							<span class="mdl-radio__label">Tourist Attractions</span>
-						</label>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 col-sm-6 my-5 text-center">
-						<button id="reset" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="reset()">Reset</button>	
-					</div>
-				</div>
+			</div>
+			<br>
+			<div class="col-sm-6 my-3">
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="accommodation">
+					<input type="radio" id="accommodation" class="mdl-radio__button" name="options" value="1" checked>
+					<span class="mdl-radio__label">Accommodation</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="bars">
+					<input type="radio" id="bars" class="mdl-radio__button" name="options" value="2">
+					<span class="mdl-radio__label">Bars</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="restaurants">
+					<input type="radio" id="restaurants" class="mdl-radio__button" name="options" value="3">
+					<span class="mdl-radio__label">Restaurants</span>
+				</label>
+				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="attractions">
+					<input type="radio" id="attractions" class="mdl-radio__button" name="options" value="4">
+					<span class="mdl-radio__label">Tourist Attractions</span>
+				</label>
+			</div>
+			<br>
+			<div class="col-12 col-sm-6 text-center">
+				<button id="reset" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="reset()">Reset</button>	
 			</div>	
 		</div>
 	</section>
-	
+
 
 	<section class="container-fluid">
 		<div class="row">
@@ -145,7 +140,7 @@
 			</table>
 		</div>
 	</div>
-	
+
 
 
 

@@ -423,6 +423,15 @@ function initMap() {
       	results.appendChild(tr);
       }
 
+      function listTable(table) {
+      	let thead = table.createTHead();
+      }
+
+      let table = document.getElementById('listTable');
+      listTable(table);
+
+
+
       function clearResults() {
       	var results = document.getElementById('results');
       	while (results.childNodes[0]) {

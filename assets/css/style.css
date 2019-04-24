@@ -15,6 +15,10 @@
     color: #fff;
     font-family: "Rubik", sans-serif; }
 
+.navbar.scrolled {
+  background-color: #36454f;
+  transition: background 050ms; }
+
 /***Hero**/
 .hero {
   align-items: center;

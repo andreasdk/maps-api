@@ -59,7 +59,7 @@
   }
 }
 
-/***Hero***/
+/***Map***/
 #map {
   height: 600px;
 }
@@ -68,5 +68,16 @@
   margin-bottom: 1em;
   margin-top: 1em;
   text-align: center;
+}
+
+.filter {
+  text-align:center;
+}
+
+.search-input {
+  font-size: 1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 100%;
 }
 

@@ -48,54 +48,52 @@
 				<div id="map" class=""></div>
 			</div>
 		</div>
-		<div class="row filter">
-			<div class="col-xs-12 col-sm-6">
-				<select id="country" class="form-control search-input">
-					<option value="all" selected>All</option>
-					<option value="au">Australia</option>
-					<option value="br">Brazil</option>
-					<option value="ca">Canada</option>
-					<option value="fr">France</option>
-					<option value="de">Germany</option>
-					<option value="mx">Mexico</option>
-					<option value="nz">New Zealand</option>
-					<option value="it">Italy</option>
-					<option value="za">South Africa</option>
-					<option value="es">Spain</option>
-					<option value="pt">Portugal</option>
-					<option value="us">U.S.A.</option>
-					<option value="uk">United Kingdom</option>
-				</select>
-			</div>
-
-			<br>
-			<div class="col-xs-12 col-sm-6">
-				<div id="locationField">
-					<input id="autocomplete" type="text" class="form-control search-input" />
-				</div>
-			</div>
-			<br>
-			<div class="col-sm-6 my-3">
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="accommodation">
-					<input type="radio" id="accommodation" class="mdl-radio__button" name="options" value="1" checked>
-					<span class="mdl-radio__label">Accommodation</span>
-				</label>
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="bars">
-					<input type="radio" id="bars" class="mdl-radio__button" name="options" value="2">
-					<span class="mdl-radio__label">Bars</span>
-				</label>
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="restaurants">
-					<input type="radio" id="restaurants" class="mdl-radio__button" name="options" value="3">
-					<span class="mdl-radio__label">Restaurants</span>
-				</label>
-				<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="attractions">
-					<input type="radio" id="attractions" class="mdl-radio__button" name="options" value="4">
-					<span class="mdl-radio__label">Tourist Attractions</span>
-				</label>
-			</div>
-			<br>
-			<div class="col-sm-6">
-				<button id="reset" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="reset()">Reset</button>	
+		<div class="row">
+			<div class="col-sm-6 offset-sm-3">
+				<form action="" class="">
+					<div class="form-group">
+						<select id="country" class="form-control search-input">
+							<option value="all" selected>All</option>
+							<option value="au">Australia</option>
+							<option value="br">Brazil</option>
+							<option value="ca">Canada</option>
+							<option value="fr">France</option>
+							<option value="de">Germany</option>
+							<option value="mx">Mexico</option>
+							<option value="nz">New Zealand</option>
+							<option value="it">Italy</option>
+							<option value="za">South Africa</option>
+							<option value="es">Spain</option>
+							<option value="pt">Portugal</option>
+							<option value="us">U.S.A.</option>
+							<option value="uk">United Kingdom</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<div id="locationField">
+							<input id="autocomplete" type="text" class="form-control search-input" />
+						</div>	
+					</div>
+					<div class="form-group">
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="accommodation">
+							<input type="radio" id="accommodation" class="mdl-radio__button" name="options" value="1" checked>
+							<span class="mdl-radio__label">Accommodation</span>
+						</label>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="bars">
+							<input type="radio" id="bars" class="mdl-radio__button" name="options" value="2">
+							<span class="mdl-radio__label">Bars</span>
+						</label>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="restaurants">
+							<input type="radio" id="restaurants" class="mdl-radio__button" name="options" value="3">
+							<span class="mdl-radio__label">Restaurants</span>
+						</label>
+						<label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="attractions">
+							<input type="radio" id="attractions" class="mdl-radio__button" name="options" value="4">
+							<span class="mdl-radio__label">Tourist Attractions</span>
+						</label>
+					</div>
+					<button id="reset" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="reset()">Reset</button>	
+				</form>	
 			</div>	
 		</div>
 	</section>
@@ -110,12 +108,12 @@
 					</table>
 				</div>
 				<div class="col-md-6">
-				<div>
-					<table id="listTable">
-						<tbody id="vacationList"></tbody>
-					</table>
+					<div>
+						<table id="listTable">
+							<tbody id="vacationList"></tbody>
+						</table>
+					</div>
 				</div>
-			</div>
 			</div>
 		</div>
 	</section>

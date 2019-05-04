@@ -175,7 +175,7 @@ function initMap() {
     }
 
     //reset the map to initial state, clear markers
-    function reset() {
+    function resetbtn() {
     	clearMarkers();
     	clearResults();
     	initMap();

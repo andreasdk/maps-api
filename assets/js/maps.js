@@ -63,8 +63,8 @@ var countries = {
 };
 
 function initMap() {
-      	//when map is initialized, accommodation is checked by default
-      	$("#accommodation").prop("checked", true);
+         //when map is reset, accommodation is checked by default
+         document.getElementById("accommodation").checked = true;
       	// map theme from https://snazzymaps.com/style/61/blue-essence
       	var styles = [
       	{
@@ -172,7 +172,7 @@ function initMap() {
         // Add a DOM event listener to react when the user selects a country.
         document.getElementById('country').addEventListener(
         	'change', setAutocompleteCountry);
-    }
+      }
 
     //reset the map to initial state, clear markers
     function resetbtn() {
@@ -180,7 +180,7 @@ function initMap() {
     	clearResults();
     	initMap();
     	$("#autocomplete").val("");
-    	$('#country')[0].selectedIndex = 0;
+    	$("#country")[0].selectedIndex = 0;
     }
 
       // When the user selects a city, get the place details for the city and
@@ -260,9 +260,9 @@ function initMap() {
               google.maps.event.addListener(markers[i], 'click', showInfoWindow);
               setTimeout(dropMarker(i), i * 100);
               addResult(results[i], i);
+            }
           }
-      }
-  });
+        });
       }
       // Search for bars and night clubs in the selected city, within the viewport of the map.
       function searchBars() {
@@ -292,9 +292,9 @@ function initMap() {
               google.maps.event.addListener(markers[i], 'click', showInfoWindow);
               setTimeout(dropMarker(i), i * 100);
               addResult(results[i], i);
+            }
           }
-      }
-  });
+        });
       }
       // Search for cafes and restaurants in the selected city, within the viewport of the map.
       function searchRestaurants() {
@@ -324,9 +324,9 @@ function initMap() {
               google.maps.event.addListener(markers[i], 'click', showInfoWindow);
               setTimeout(dropMarker(i), i * 100);
               addResult(results[i], i);
+            }
           }
-      }
-  });
+        });
       }
       // Search for tourist attractions in the selected city, within the viewport of the map.
       function searchAttractions() {
@@ -356,9 +356,9 @@ function initMap() {
               google.maps.event.addListener(markers[i], 'click', showInfoWindow);
               setTimeout(dropMarker(i), i * 100);
               addResult(results[i], i);
+            }
           }
-      }
-  });
+        });
       }
 
       function clearMarkers() {
@@ -501,4 +501,4 @@ function initMap() {
         } else {
         	document.getElementById('iw-website-row').style.display = 'none';
         }
-    }
+      }

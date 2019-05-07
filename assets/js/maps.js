@@ -190,6 +190,7 @@ function initMap() {
       		var place = autocomplete.getPlace();
       		if (place.geometry) {
       			map.panTo(place.geometry.location);
+            console.log(markers);
       			map.setZoom(15);
       			searchHotels();
       		}
@@ -249,6 +250,7 @@ function initMap() {
             	var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
             	var markerIcon = MARKER_PATH + markerLetter + '.png';
               // Use marker animation to drop the icons incrementally on the map.
+              console.log("****");
               markers[i] = new google.maps.Marker({
               	position: results[i].geometry.location,
               	animation: google.maps.Animation.DROP,
@@ -389,6 +391,7 @@ function initMap() {
 
       function dropMarker(i) {
       	return function() {
+          console.log(markers);
       		markers[i].setMap(map);
       	};
       }

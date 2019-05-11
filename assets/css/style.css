@@ -8,14 +8,18 @@ Charcoal grey: #5A5560
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; }
+  padding: 0; 
+}
+
+html {
+  font-size: 62.5%;
+}
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
-  padding: 30px; }
+  padding: 3rem; }
 
 /***Header**/
 
@@ -29,12 +33,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  left: 4rem;
+  top: 4rem;
 }
 
 .logo {
-  height: 35px;
+  height: 3.5rem;
 }
 
 .text-box {
@@ -47,35 +51,36 @@ body {
 
 .heading-primary {
   color: #FAED26;
-  margin-bottom: 60px;
+  margin-bottom: 6rem;
   text-transform: uppercase;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 60px;
+  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 3.5rem;
 }
 
 .heading-primary-sub {
   display: block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
-  letter-spacing: 14.5px;
+  letter-spacing: 1.45rem;
 }
 
 .btn:link,
 .btn:visited {
-  border-radius: 100px;
+  border-radius: 10rem;
   display: inline-block;
-  padding: 15px 40px;
+  font-size: 1.5rem;
+  padding: 1.5rem 4rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .btn:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn-white {
@@ -87,14 +92,14 @@ body {
 .how-to {
   background-color: #f7f7f7;
   margin-top: -20vh;
-  padding: 25rem 0;
+  padding: 25rem;
 }
 
 .u-center-text {
   text-align: center;
 }
 
-.u-margin-bottom-8 {
+.u-margin-bottom-large {
   margin-bottom: 8rem;
 }
 
@@ -105,6 +110,24 @@ body {
   background-image: linear-gradient(to right, rgba(70, 52, 78), rgba(90, 85, 96));
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight:700;
+  text-transform: uppercase;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  font-size:1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
 }
 
 /***Map***/

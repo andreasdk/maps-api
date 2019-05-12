@@ -169,11 +169,35 @@ body {
   z-index: 20;
 }
 
-/***Map***/
+/***Section-Filter***/
+.section-filter {
+  background-image: linear-gradient(to right bottom, rgba(70, 52, 78, 0.8), rgba(90, 85, 96, 0.4));
+  background-position: top;
+  background-size: contain;
+  clip-path: polygon(0 0, 100% 0, 100% 30vh, 0 100%);
+  height: 40vh; 
+}
+
+.form-group {
+  margin-top: 4rem;
+}
+
+.form-check-label {
+  color:#fff;
+  font-size: 1.5rem;
+}
+
+.btn-yellow {
+  background-color: #FAED26;
+  color: #777;
+}
+
+
+/***Section-Map***/
 
 
 #map {
-  height: 60rem; }
+  height: 50rem; }
 
 .section-heading {
   margin-bottom: 1.6em;

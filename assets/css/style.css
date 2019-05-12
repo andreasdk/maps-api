@@ -209,6 +209,13 @@ body {
   margin-top: 2rem;
   width: 100%; }
 
-/**Results**/
+/**Section-Results**/
+
+.section-results {
+  background-color: #f7f7f7;
+  margin-top: -20vh;
+  padding: 20rem;
+}
+
 #resultsTable {
   width: 100%; }

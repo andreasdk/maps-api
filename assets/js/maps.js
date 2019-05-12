@@ -244,6 +244,7 @@ function initMap() {
       		if (status === google.maps.places.PlacesServiceStatus.OK) {
       			clearResults();
       			clearMarkers();
+            document.getElementById('results-heading').innerHTML = "Results";
             // Create a marker for each hotel found, and
             // assign a letter of the alphabetic to each marker icon.
             for (var i = 0; i < results.length; i++) {

@@ -67,15 +67,15 @@
 							</div>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="bars" value="option2">
-							<label class="form-check-label" for="bars">Bars</label>
+								<label class="form-check-label" for="bars">Bars</label>
 							</div>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="restaurants" value="option3">
-							<label class="form-check-label" for="restaurants">Restaurants</label>
+								<label class="form-check-label" for="restaurants">Restaurants</label>
 							</div>
 							<div class="form-check form-check-inline">
 								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="attractions" value="option4">
-							<label class="form-check-label" for="attractions">Attractions</label>
+								<label class="form-check-label" for="attractions">Attractions</label>
 							</div>
 						</div>
 						<a href="#" id="reset" class="btn btn-yellow" onclick="resetbtn(); return false;">Reset</a>
@@ -84,72 +84,67 @@
 				</div>	
 			</div>
 		</section>
-	</main>
 
-	<section class="container-fluid">
-		<h4 class="display-4 section-heading">Search Results</h4>
-		<div class="row">
-			<div class="col-md-6">
-				<div id="listing">
-					<table id="resultsTable">
-						<tbody id="results"></tbody>
-					</table>
-				</div>
-				<div class="col-md-6">
-					<div>
-						<table id="listTable">
-							<tbody id="vacationList"></tbody>
+		<section class="section-results">
+			<div class="u-center-text u-margin-bottom-large">
+				<h2 class="heading-secondary" id="results-heading"> </h2>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div id="listing">
+						<table id="resultsTable">
+							<tbody id="results"></tbody>
 						</table>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</main>
 
-	<!--Info window-->
-	<div style="display: none">
-		<div id="info-content">
-			<table>
-				<tr id="iw-url-row" class="iw_table_row">
-					<td id="iw-icon" class="iw_table_icon"></td>
-					<td id="iw-url"></td>
-				</tr>
-				<tr id="iw-address-row" class="iw_table_row">
-					<td class="iw_attribute_name">Address:</td>
-					<td id="iw-address"></td>
-				</tr>
-				<tr id="iw-phone-row" class="iw_table_row">
-					<td class="iw_attribute_name">Telephone:</td>
-					<td id="iw-phone"></td>
-				</tr>
-				<tr id="iw-rating-row" class="iw_table_row">
-					<td class="iw_attribute_name">Rating:</td>
-					<td id="iw-rating"></td>
-				</tr>
-				<tr id="iw-website-row" class="iw_table_row">
-					<td class="iw_attribute_name">Website:</td>
-					<td id="iw-website"></td>
-				</tr>
-			</table>
-		</div>
+<!--Info window-->
+<div style="display: none">
+	<div id="info-content">
+		<table>
+			<tr id="iw-url-row" class="iw_table_row">
+				<td id="iw-icon" class="iw_table_icon"></td>
+				<td id="iw-url"></td>
+			</tr>
+			<tr id="iw-address-row" class="iw_table_row">
+				<td class="iw_attribute_name">Address:</td>
+				<td id="iw-address"></td>
+			</tr>
+			<tr id="iw-phone-row" class="iw_table_row">
+				<td class="iw_attribute_name">Telephone:</td>
+				<td id="iw-phone"></td>
+			</tr>
+			<tr id="iw-rating-row" class="iw_table_row">
+				<td class="iw_attribute_name">Rating:</td>
+				<td id="iw-rating"></td>
+			</tr>
+			<tr id="iw-website-row" class="iw_table_row">
+				<td class="iw_attribute_name">Website:</td>
+				<td id="iw-website"></td>
+			</tr>
+		</table>
 	</div>
+</div>
 
 
 
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEVtPMmEAtDsuLS6Sn-7iPCGQh6-fxzew&libraries=places&region=GB&callback=initMap"></script>
-	<script src="assets/js/maps.js"></script>
-	<script>
-		$(function () {
-			$(document).scroll(function(){
-				var $nav = $("#navbarTrip");
-				$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
-			})
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEVtPMmEAtDsuLS6Sn-7iPCGQh6-fxzew&libraries=places&region=GB&callback=initMap"></script>
+<script src="assets/js/maps.js"></script>
+<script>
+	$(function () {
+		$(document).scroll(function(){
+			var $nav = $("#navbarTrip");
+			$nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
 		})
-	</script>
+	})
+</script>
 </body>
 </html>

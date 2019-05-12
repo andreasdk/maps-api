@@ -218,7 +218,10 @@ body {
 }
 
 #resultsTable {
-  width: 100%; }
+  color: #FAED26;
+  font-size: 1.6rem;
+  width: 100%; 
+}
 
 /**Footer**/
 .footer {

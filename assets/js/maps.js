@@ -403,17 +403,13 @@ function initMap() {
       	var markerIcon = MARKER_PATH + markerLetter + '.png';
 
       	var tr = document.createElement('tr');
-      	tr.style.backgroundColor = (i % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
+      	tr.style.backgroundColor = (i % 2 === 0 ? '#46344E' : '#5A5560');
       	tr.onclick = function() {
       		google.maps.event.trigger(markers[i], 'click');
       	};
 
       	var iconTd = document.createElement('td');
       	var nameTd = document.createElement('td');
-      	var btn = document.createElement('button');
-      	btn.type = "button"
-      	btn.className = "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent";
-      	btn.innerHTML = "Add To List";
       	var icon = document.createElement('img');
       	icon.src = markerIcon;
       	icon.setAttribute('class', 'placeIcon');
@@ -423,7 +419,6 @@ function initMap() {
       	nameTd.appendChild(name);
       	tr.appendChild(iconTd);
       	tr.appendChild(nameTd);
-      	tr.appendChild(btn);
       	results.appendChild(tr);
       }
 

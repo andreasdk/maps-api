@@ -219,3 +219,17 @@ body {
 
 #resultsTable {
   width: 100%; }
+
+/**Footer**/
+.footer {
+  background-color: #5A5560;
+  display: flex;
+  justify-content: center;
+  min-height: 10rem;
+}
+
+.footer-icon a i {
+  color: #FAED26;
+  font-size: 4rem;
+  padding-top: 3rem;
+}

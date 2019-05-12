@@ -170,17 +170,19 @@ body {
 }
 
 /***Map***/
+
+
 #map {
-  height: 600px; }
+  height: 60rem; }
 
 .section-heading {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-bottom: 1.6em;
+  margin-top: 1.6em;
   text-align: center; }
 
 .search-input {
-  font-size: 1em;
-  margin-top: 2em;
+  font-size: 1.5rem;
+  margin-top: 2rem;
   width: 100%; }
 
 /**Results**/

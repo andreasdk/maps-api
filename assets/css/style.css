@@ -46,7 +46,7 @@ body {
   position: fixed;
   right: 6.5rem;
   top: 6.5rem;
-  transform: scale(50);
+  transform: scale(80);
   width: 6rem;
   z-index: 1000;
 }

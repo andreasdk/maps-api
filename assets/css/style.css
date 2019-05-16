@@ -21,6 +21,78 @@ body {
   line-height: 1.7;
   padding: 3rem; }
 
+/***Navbar**/
+.nav {}
+
+.nav-checkbox {
+  display: none;
+}
+
+.nav-button {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 7rem;
+  position: fixed;
+  right: 6rem;
+  top: 6rem;
+  width: 7rem;
+  z-index: 2000;
+}
+
+.nav-background {
+  background-image: radial-gradient(rgba(70, 52, 78), rgba(90, 85, 96));
+  border-radius: 50%;
+  height: 6rem;
+  position: fixed;
+  right: 6.5rem;
+  top: 6.5rem;
+  transform: scale(50);
+  width: 6rem;
+  z-index: 1000;
+}
+
+.nav__outer {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1500;
+}
+
+.nav__list {
+  left: 50%;
+  list-style-type: none;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav__item {
+  margin:1rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 220%;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .4s;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  background-position: 100%;
+  color:#46344E
+  transform: translateX(1rem);
+
+}
 /***Header**/
 
 .header {

@@ -28,6 +28,21 @@ body {
   display: none;
 }
 
+.nav-checkbox:checked + .nav-button .nav-icon {
+  background-color: transparent;
+}
+
+.nav-checkbox:checked + .nav-button .nav-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-checkbox:checked + .nav-button .nav-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+
 .nav-checkbox:checked ~ .nav-background {
   transform: scale(80);
 }
@@ -41,13 +56,23 @@ body {
 .nav-button {
   background-color: #fff;
   border-radius: 50%;
-  box-shadow: 0 1rem 3rem rgba(#000000);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
   height: 7rem;
   position: fixed;
   right: 6rem;
+  text-align: center;
   top: 6rem;
   width: 7rem;
   z-index: 2000;
+}
+
+.nav-button:hover .nav-icon:before {
+  top: -1rem;
+}
+
+.nav-button:hover .nav-icon:after {
+  top: 1rem;
 }
 
 .nav-background {
@@ -57,10 +82,44 @@ body {
   position: fixed;
   right: 6.5rem;
   top: 6.5rem;
+  /*https://easings.net/en#easeInOutCirc*/
   transition: transform .6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   width: 6rem;
   z-index: 1000;
 }
+
+.nav-icon {
+  margin-top: 3.5rem;
+  position: relative
+}
+
+
+.nav-icon,
+.nav-icon::before,
+.nav-icon::after {
+  background-color: #000000;
+  display: inline-block;
+  height: 2px;
+  width: 3rem;
+}
+
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  transition: all .2s;
+}
+
+.nav-icon::before {
+  top: -.8rem;
+}
+
+.nav-icon::after {
+  top: .8rem;
+}
+
+
 
 .nav__outer {
   height: 100vh;

@@ -28,9 +28,20 @@ body {
   display: none;
 }
 
+.nav-checkbox:checked ~ .nav-background {
+  transform: scale(80);
+}
+
+.nav-checkbox:checked ~ .nav__outer {
+  opacity: 1;
+  width: 100%;
+}
+
+
 .nav-button {
   background-color: #fff;
   border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgba(#000000);
   height: 7rem;
   position: fixed;
   right: 6rem;
@@ -46,17 +57,19 @@ body {
   position: fixed;
   right: 6.5rem;
   top: 6.5rem;
-  transform: scale(80);
+  transition: transform .6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   width: 6rem;
   z-index: 1000;
 }
 
 .nav__outer {
   height: 100vh;
+  opacity: 0;
   position: fixed;
   right: 0;
   top: 0;
-  width: 100%;
+  transition: all .6s;
+  width: 0;
   z-index: 1500;
 }
 
@@ -67,6 +80,7 @@ body {
   text-align: center;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 .nav__item {

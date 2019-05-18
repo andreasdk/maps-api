@@ -233,8 +233,7 @@ body {
 /***How-To***/
 .how-to {
   background-color: #f7f7f7;
-  margin-top: -20vh;
-  padding: 25rem;
+  padding: 10rem;
 }
 
 .u-center-text {
@@ -272,9 +271,7 @@ body {
   margin-bottom: 3rem;
 }
 
-.composition {
-  position: relative;
-}
+
 
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(.9);
@@ -284,29 +281,12 @@ body {
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   outline-offset: 2rem;
-  position: absolute;
   transition: all .2s translateY(-.5rem);
-  width: 55%;
 }
 
-.composition__photo--p1 {
-  left:0;
-  top:-2rem;
-}
-
-.composition__photo--p2 {
-  right:0;
-  top: 2rem;
-}
-
-.composition__photo--p3 {
-  left:20%;
-  top:10rem;
-}
 
 .composition__photo:hover {
-  outline: 1.5rem solid #FAED26;
-  transform: scale(1.05);
+  outline: .75rem solid #FAED26;
   box-shadow:  0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 20;
 }

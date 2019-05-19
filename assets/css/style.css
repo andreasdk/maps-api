@@ -392,8 +392,7 @@ body {
 
 .section-results {
   background-color: #f7f7f7;
-  margin-top: -20vh;
-  padding: 20rem;
+  padding: 5rem;
 }
 
 #resultsTable {

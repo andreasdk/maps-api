@@ -1,13 +1,12 @@
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
-var countryRestrict = {'country': [] };
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
-
+// initializes map
 function initMap() {
-         //when map is reset, accommodation is checked by default
+         //accommodation is checked by default
          document.getElementById("accommodation").checked = true;
       	// map theme from https://snazzymaps.com/style/20053/multi-brand-network
       	var styles = [
@@ -273,6 +272,7 @@ function initMap() {
           ]
         }
         ];
+        //sets the initial state of the map, the longtitude, langtitute, zoom, streetview and map controls
         map = new google.maps.Map(document.getElementById('map'), {
           zoom: 3,
           center: {lat: 54.525961, lng: 15.255119},
@@ -282,7 +282,7 @@ function initMap() {
           zoomControl: true,
           streetViewControl: true
         });
-
+        //grabs info-content from index.html to generate pop-up window on map for each establishment
         infoWindow = new google.maps.InfoWindow({
           content: document.getElementById('info-content')
         });
@@ -299,6 +299,7 @@ function initMap() {
         	});
         places = new google.maps.places.PlacesService(map);
 
+        // hides the filter radio-buttons until user clicks on the autocomplete input
         $("#autocomplete").click(function(){
           $("#radio-filter").toggle();
         });
@@ -320,7 +321,6 @@ function initMap() {
     	clearResults();
     	initMap();
     	$("#autocomplete").val("");
-    	$("#country")[0].selectedIndex = 0;
     }
 
       // When the user selects a city, get the place details for the city and
@@ -503,7 +503,7 @@ function initMap() {
           }
         });
       }
-
+      //clears markers from map, empties markers array
       function clearMarkers() {
       	for (var i = 0; i < markers.length; i++) {
       		if (markers[i]) {
@@ -529,7 +529,7 @@ function initMap() {
       	clearResults();
       	clearMarkers();
       }
-
+      // sets markers on map
       function dropMarker(i) {
       	return function() {
           console.log(markers);

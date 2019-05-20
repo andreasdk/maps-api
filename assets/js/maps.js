@@ -1,6 +1,7 @@
 var map, places, infoWindow;
 var markers = [];
 var autocomplete;
+var countryRestrict = {'country': [] };
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
@@ -313,6 +314,7 @@ function initMap() {
         // Add a DOM event listener to react when the user selects a country.
         document.getElementById('country').addEventListener(
         	'change', setAutocompleteCountry);
+        document.getElementById('reset').addEventListener('click', setAutocompleteCountry);
       }
 
     //reset the map to initial state, clear markers
@@ -320,7 +322,7 @@ function initMap() {
     	clearMarkers();
     	clearResults();
     	initMap();
-    	$("#autocomplete").val("");
+      $('#autocomplete').text("");
     }
 
       // When the user selects a city, get the place details for the city and
@@ -391,7 +393,6 @@ function initMap() {
             	var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
             	var markerIcon = MARKER_PATH + markerLetter + '.png';
               // Use marker animation to drop the icons incrementally on the map.
-              console.log("****");
               markers[i] = new google.maps.Marker({
               	position: results[i].geometry.location,
               	animation: google.maps.Animation.DROP,
@@ -561,14 +562,6 @@ function initMap() {
       	tr.appendChild(nameTd);
       	results.appendChild(tr);
       }
-
-      function listTable(table) {
-      	let thead = table.createTHead();
-      }
-
-      let table = document.getElementById('listTable');
-      listTable(table);
-
 
 
       function clearResults() {

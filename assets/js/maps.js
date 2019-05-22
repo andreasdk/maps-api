@@ -5,6 +5,13 @@ var countryRestrict = {'country': [] };
 var MARKER_PATH = 'https://developers.google.com/maps/documentation/javascript/images/marker_green';
 var hostnameRegexp = new RegExp('^https?://.+?/');
 
+//reset the map to initial state, clear markers
+function resetbtn() {
+  clearMarkers();
+  clearResults();
+  initMap();
+}
+
 // initializes map
 function initMap() {
          //accommodation is checked by default
@@ -306,24 +313,13 @@ function initMap() {
         });
 
         autocomplete.addListener('place_changed', onPlaceChanged);
-        document.getElementById('accommodation').addEventListener('change', onPlaceChanged);
-        document.getElementById('bars').addEventListener('change', onPlaceChanged);
-        document.getElementById('restaurants').addEventListener('change', onPlaceChanged);  
-        document.getElementById('attractions').addEventListener('change', onPlaceChanged);
-
-        // Add a DOM event listener to react when the user selects a country.
-        document.getElementById('country').addEventListener(
-        	'change', setAutocompleteCountry);
-        document.getElementById('reset').addEventListener('click', setAutocompleteCountry);
       }
 
-    //reset the map to initial state, clear markers
-    function resetbtn() {
-    	clearMarkers();
-    	clearResults();
-    	initMap();
-      $('#autocomplete').text("");
-    }
+
+
+    $("#reset").click(function(){
+          $("#autocomplete").val("");
+        });
 
       // When the user selects a city, get the place details for the city and
       // zoom the map in on the city.
@@ -332,7 +328,6 @@ function initMap() {
       		var place = autocomplete.getPlace();
       		if (place.geometry) {
       			map.panTo(place.geometry.location);
-            console.log(markers);
             map.setZoom(15);
             searchHotels();
           }
@@ -516,24 +511,16 @@ function initMap() {
 
       // Set the country restriction based on user input.
       // Also center and zoom the map on the given country.
-      function setAutocompleteCountry() {
-      	var country = document.getElementById('country').value;
-      	if (country == 'all') {
-      		autocomplete.setComponentRestrictions({'country': []});
-      		map.setCenter({lat: 15, lng: 0});
-      		map.setZoom(2);
-      	} else {
-      		autocomplete.setComponentRestrictions({'country': country});
-      		map.setCenter(countries[country].center);
-      		map.setZoom(countries[country].zoom);
-      	}
+      function setAutocompleteCountry() { 	
+      	autocomplete.setComponentRestrictions({'country': country});
+      	map.setCenter(countries[country].center);
+      	map.setZoom(countries[country].zoom);	
       	clearResults();
       	clearMarkers();
       }
       // sets markers on map
       function dropMarker(i) {
       	return function() {
-          console.log(markers);
           markers[i].setMap(map);
         };
       }

@@ -1,10 +1,13 @@
-/*
-COLORS:
+/*CSS Variables*/
+:root {
+  --primarycolor: #5A5560;
+  --secondarycolor:#46344E;
+  --lightcolor:#FAED26;
+  --primaryfont:'Fjalla One', sans-serif;
+  --secondaryfont:'Noto Sans', sans-serif;
+}
 
-Bright yellow : #FAED26
-Deep navy gray: #46344E
-Charcoal grey: #5A5560
-*/
+/*Root Element Styles*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,23 +19,80 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: var(--primaryfont);
   font-weight: 400;
   line-height: 1.7;
-  padding: 3rem; }
+  padding: 3rem; 
+}
+
+/*Headings*/
+.heading-primary {
+  color: var(--lightcolor);
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.45rem;
+}
+
+.heading-secondary {
+  color: var(--primarycolor);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading-tertiary {
+  color: var(--secondarycolor);
+  font-size: 1.6rem;
+  font-weight:700;
+  text-transform: uppercase;
+}
+
+/*Utility Classes*/
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-padding-bottom-small {
+  padding-bottom: 3rem;
+}
+
 
 /***Navbar**/
+
+/*Display to none so custom styled checkbox can be placed over it*/
 .nav-checkbox {
   display: none;
 }
 
+/*Makes the X effect on the nav-icon when it is checked*/
 .nav-checkbox:checked + .nav-button .nav-icon {
   background-color: transparent;
 }
 
 .nav-checkbox:checked + .nav-button .nav-icon::before {
   top: 0;
-  transform: rotate(45deg);
+  transform: rotate(65deg);
 }
 
 .nav-checkbox:checked + .nav-button .nav-icon::after {
@@ -40,7 +100,7 @@ body {
   transform: rotate(-45deg);
 }
 
-
+/*Nav become full page width on click*/
 .nav-checkbox:checked ~ .nav-background {
   transform: scale(80);
 }
@@ -117,8 +177,6 @@ body {
   top: .8rem;
 }
 
-
-
 .nav__outer {
   height: 100vh;
   opacity: 0;
@@ -149,7 +207,8 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
   color: #fff;
-  font-size: 3rem;
+  display: inline-block;
+  font-size: 3.5rem;
   font-weight: 300;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -157,10 +216,16 @@ body {
   transition: all .4s;
 }
 
+.nav__link span {
+  display: inline-block;
+  margin-right: 1.5rem;
+
+}
+
 .nav__link:hover,
 .nav__link:active {
   background-position: 100%;
-  color:#46344E
+  color:var(--primarycolor);
   transform: translateX(1rem);
 
 }
@@ -191,25 +256,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.heading-primary {
-  color: #FAED26;
-  margin-bottom: 6rem;
-  text-transform: uppercase;
-}
-
-.heading-primary-main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-}
-
-.heading-primary-sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 1.45rem;
-}
 
 .btn {
   border-radius: 10rem;
@@ -232,42 +278,14 @@ body {
 /***How-To***/
 .how-to {
   background-color: #f7f7f7;
-  padding: 10rem;
+  padding: 5rem;
 }
 
-.u-center-text {
-  text-align: center;
-}
-
-.u-margin-bottom-large {
-  margin-bottom: 8rem;
-}
-
-.heading-secondary {
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-image: linear-gradient(to right, rgba(70, 52, 78), rgba(90, 85, 96));
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight:700;
-  text-transform: uppercase;
-}
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem;
-}
-
-.u-padding-bottom-small {
-  padding-bottom: 3rem;
-}
 
 .paragraph {
+  color: inherit;
   font-size:1.6rem;
+  font-family:var(--secondaryfont);
 }
 
 .paragraph:not(:last-child) {
@@ -283,16 +301,9 @@ body {
 .composition__photo {
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  outline-offset: 2rem;
-  transition: all .2s translateY(-.5rem);
 }
 
 
-.composition__photo:hover {
-  outline: .75rem solid #FAED26;
-  box-shadow:  0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 20;
-}
 
 /***Section-Filter***/
 .section-filter {
@@ -315,13 +326,13 @@ body {
 .form-check-label {
   color:inherit;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding-left: 4rem;
   position: relative;
 }
 
 .filter-radio-button {
-  border: 5px solid #FAED26;
+  border: 5px solid var(--lightcolor);
   border-radius: 50%;
   display: inline-block;
   height: 3rem;
@@ -332,7 +343,7 @@ body {
 }
 
 .filter-radio-button::after {
-  background-color: #FAED26;
+  background-color: var(--lightcolor);
   border-radius: 50%;
   content: "";
   display: block;
@@ -352,8 +363,8 @@ body {
 }
 
 .btn-yellow {
-  background-color: #FAED26;
-  color: #777;
+  background-color: var(--lightcolor);
+  color: var(--secondarycolor);
   margin-top: 1.6rem;
 }
 
@@ -379,7 +390,7 @@ body {
 
 .search-input:focus {
   outline: none;
-  border-bottom: 5px solid #FAED26;
+  border-bottom: 5px solid var(--lightcolor);
   box-shadow: 0.1rem 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -391,25 +402,26 @@ body {
 
 .section-results {
   background-color: #f7f7f7;
+  margin-top: -5rem;
   padding: 5rem;
 }
 
 #resultsTable {
-  color: #FAED26;
+  color: var(--lightcolor);
   font-size: 1.6rem;
   width: 100%; 
 }
 
 /**Footer**/
 .footer {
-  background-color: #5A5560;
+  background-color: var(--primarycolor);
   display: flex;
   justify-content: center;
   min-height: 10rem;
 }
 
 .footer-icon a i {
-  color: #FAED26;
+  color: var(--lightcolor);
   font-size: 4rem;
   padding-top: 3rem;
 }

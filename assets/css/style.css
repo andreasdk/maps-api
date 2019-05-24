@@ -22,6 +22,7 @@ body {
   font-family: var(--primaryfont);
   font-weight: 400;
   line-height: 1.7;
+  overflow-x: hidden;
   padding: 3rem; 
 }
 
@@ -278,7 +279,7 @@ body {
 /***How-To***/
 .how-to {
   background-color: #f7f7f7;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 
@@ -402,7 +403,7 @@ body {
 
 .section-results {
   background-color: #f7f7f7;
-  margin-top: -5rem;
+  margin-top: -10rem;
   padding: 5rem;
 }
 
@@ -424,4 +425,62 @@ body {
   color: var(--lightcolor);
   font-size: 4rem;
   padding-top: 3rem;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    padding: 0;
+  }
+  .nav-button {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .nav-icon {
+    margin-top: 1.5rem;
+    width: 2rem;
+  }
+  .nav-icon::before {
+    width: 2rem;
+  }
+  .nav-icon::after {
+    width: 2rem;
+  }
+  .nav-background {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .logo-box {
+    left: 2rem;
+    top:2rem;
+  }
+  .logo {
+    height: 2.5rem;
+  }
+  .heading-primary {
+    margin-bottom: 3rem;
+  }
+  .header {
+    height: 75vh;
+  }
+  .heading-primary-main {
+    font-size: 1.5rem;
+    letter-spacing: 2rem;
+  }
+  .heading-primary-sub {
+    font-size: 1.25rem;
+    letter-spacing: 1rem;
+  }
+  .paragraph {
+    margin-bottom: 3rem;
+  }
+  .form-check-label {
+    font-size: 1rem;
+  }
+  .section-results {
+    padding: 1rem;
+  }
 }

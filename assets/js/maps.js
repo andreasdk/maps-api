@@ -313,6 +313,11 @@ function initMap() {
         });
 
         autocomplete.addListener('place_changed', onPlaceChanged);
+        // Add a DOM event listener to react when the user selects a radio-button category
+        document.getElementById('accommodation').addEventListener('change', onPlaceChanged);
+        document.getElementById('bars').addEventListener('change', onPlaceChanged);
+        document.getElementById('restaurants').addEventListener('change', onPlaceChanged);  
+        document.getElementById('attractions').addEventListener('change', onPlaceChanged);
       }
 
 

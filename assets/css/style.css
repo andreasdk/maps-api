@@ -92,7 +92,7 @@ body {
 
 .nav-checkbox:checked + .nav-button .nav-icon::before {
   top: 0;
-  transform: rotate(65deg);
+  transform: rotate(45deg);
 }
 
 .nav-checkbox:checked + .nav-button .nav-icon::after {

@@ -31,6 +31,7 @@ body {
 .heading-primary {
   color: var(--lightcolor);
   margin-bottom: 6rem;
+  margin-left: 2.25rem;
   text-transform: uppercase;
 }
 
@@ -39,6 +40,8 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+
+  margin-top: 12rem;
 }
 
 .heading-primary-sub {
@@ -46,6 +49,7 @@ body {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.45rem;
+  margin-left: -1.5rem;
 }
 
 .heading-secondary {
@@ -470,10 +474,12 @@ body {
   .heading-primary-main {
     font-size: 1.5rem;
     letter-spacing: 2rem;
+    margin-top: 0;
   }
   .heading-primary-sub {
     font-size: 1.25rem;
-    letter-spacing: 1rem;
+    letter-spacing: .25rem;
+    margin-top: .5rem;
   }
   .paragraph {
     margin-bottom: 3rem;

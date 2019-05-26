@@ -322,9 +322,9 @@ function initMap() {
 
 
 
-    $("#reset").click(function(){
-          $("#autocomplete").val("");
-        });
+      $("#reset").click(function(){
+        $("#autocomplete").val("");
+      });
 
       // When the user selects a city, get the place details for the city and
       // zoom the map in on the city.
@@ -524,10 +524,13 @@ function initMap() {
       	clearMarkers();
       }
       // sets markers on map
-      function dropMarker(i) {
-      	return function() {
-          markers[i].setMap(map);
-        };
+      function dropMarker(i) { 
+        var myMarkers = markers; 
+        return function() { 
+          if( myMarkers === markers) { 
+            markers[i].setMap(map); 
+          } 
+        }; 
       }
 
       function addResult(result, i) {

@@ -99,17 +99,21 @@ I tried to use semantic HTML where possible.
 ## Deployment
 * I deployed this website via GitHub Pages. [Link to website](https://andreasdk.github.io/api-map)
 * There are no differences between the local and deployed websites.
-* I developed each section of the website using different branches, and merged them into a master branch, which is the version hosted on GitHub pages.
+* I developed each section of the website using different branches, and merged them into a master branch, which is the version hosted on GitHub pages. The branches are navbar, hero, how, maps, results and footer. I had a Jasmine testing branch before realizing that Jasmine testing was unsuitable for this project.
 
 ---
 
 ## Credit
 
 #### Content
-
+* I got the Google Maps Hotels API code from the [Maps Platform](https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-hotelsearch) website
+* I got the Place Types code from the [Place Types](https://developers.google.com/places/supported_types) page
 
 #### Images
-
+* [Hero image](https://www.orokotravel.ie/wp-content/uploads/Bangkok-Thailand.jpg)
+* [Hotel image](https://unsplash.com/photos/uocSnWMhnAs)
+* [Restaurant image](https://unsplash.com/photos/qE1jxYXiwOA)
+* [Museum image](https://unsplash.com/photos/oLhTLD-RBsc)
 
 #### Acknowledgements
 

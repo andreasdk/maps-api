@@ -24,7 +24,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   overflow-x: hidden;
-  padding: 3rem; 
 }
 
 /*Headings*/
@@ -85,17 +84,13 @@ body {
 
 
 /***Navbar**/
-
-.fixed-top {
-  top: 3rem;
+.navbar.scrolled {
+  background-color: var(--primarycolor);
+  transition: background 60ms;
 }
 
-.navbar-brand {
-  margin-left: 2.5rem;
-}
-
-.nav-checkbox {
-  display: none;
+.navbar-toggler {
+  background-color: #f7f7f7;
 }
 
 .navbar-light .navbar-nav .nav-link:link,
@@ -119,151 +114,12 @@ body {
   transform: translateX(2rem);
 }
 
-
-/*Makes the X effect on the nav-icon when it is checked*/
-.nav-checkbox:checked + .nav-button .nav-icon {
-  background-color: transparent;
-}
-
-.nav-checkbox:checked + .nav-button .nav-icon::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.nav-checkbox:checked + .nav-button .nav-icon::after {
-  top: 0;
-  transform: rotate(-45deg);
-}
-
-/*Nav become full page width on click*/
-.nav-checkbox:checked ~ .nav-background {
-  transform: scale(80);
-}
-
-.nav-checkbox:checked ~ .nav__outer {
-  opacity: 1;
-  width: 100%;
-}
-
-
-.nav-button {
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  height: 7rem;
-  position: fixed;
-  right: 6rem;
-  text-align: center;
-  top: 6rem;
-  width: 7rem;
-  z-index: 2000;
-}
-
-.nav-button:hover .nav-icon:before {
-  top: -1rem;
-}
-
-.nav-button:hover .nav-icon:after {
-  top: 1rem;
-}
-
-.nav-background {
-  background-image: radial-gradient(rgba(70, 52, 78), rgba(90, 85, 96));
-  border-radius: 50%;
-  height: 6rem;
-  position: fixed;
-  right: 6.5rem;
-  top: 6.5rem;
-  /*https://easings.net/en#easeInOutCirc*/
-  transition: transform .6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  width: 6rem;
-  z-index: 1000;
-}
-
-.nav-icon {
-  margin-top: 3.5rem;
-  position: relative
-}
-
-
-.nav-icon,
-.nav-icon::before,
-.nav-icon::after {
-  background-color: #000000;
-  display: inline-block;
-  height: 2px;
-  width: 3rem;
-}
-
-.nav-icon::before,
-.nav-icon::after {
-  content: "";
-  left: 0;
-  position: absolute;
-  transition: all .2s;
-}
-
-.nav-icon::before {
-  top: -.8rem;
-}
-
-.nav-icon::after {
-  top: .8rem;
-}
-
-.nav__outer {
-  height: 100vh;
-  opacity: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  transition: all .6s;
-  width: 0;
-  z-index: 1500;
-}
-
-.nav__list {
-  left: 50%;
-  list-style-type: none;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.nav__item {
-  margin:1rem;
-}
-
-.nav__link:link,
-.nav__link:visited {
-  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 220%;
-  color: #fff;
-  display: inline-block;
-  font-size: 3.5rem;
-  font-weight: 300;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all .4s;
-}
-
-.nav__link span {
+.nav-link span {
   display: inline-block;
   margin-right: 1.5rem;
 
 }
 
-.nav__link:hover,
-.nav__link:active {
-  background-position: 100%;
-  color:var(--primarycolor);
-  transform: translateX(1rem);
-
-}
 /***Header**/
 
 .header {
@@ -469,24 +325,6 @@ body {
   body {
     padding: 0;
   }
-  .nav-button {
-    height: 3.5rem;
-    width: 3.5rem;
-  }
-  .nav-icon {
-    margin-top: 1.5rem;
-    width: 2rem;
-  }
-  .nav-icon::before {
-    width: 2rem;
-  }
-  .nav-icon::after {
-    width: 2rem;
-  }
-  .nav-background {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
   .logo-box {
     left: 2rem;
     top:2rem;
@@ -520,3 +358,8 @@ body {
     padding: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    text-align: center;
+  }

@@ -199,7 +199,7 @@ body {
 /***Section-Filter***/
 .section-filter {
   background-color: #f7f7f7;
-  height: 40rem;
+  height: 30rem;
 }
 
 .form-group {
@@ -350,6 +350,10 @@ body {
   }
   .paragraph {
     margin-bottom: 3rem;
+  }
+  .search-input {
+    margin: 0 auto;
+    width: 90%;
   }
   .form-check-label {
     font-size: 1rem;

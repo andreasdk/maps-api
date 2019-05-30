@@ -89,7 +89,7 @@ body {
 
 /***Navbar**/
 .navbar.scrolled {
-  background-color: var(--primarycolor);
+  background-color: var(--secondarycolor);
   transition: background 60ms;
 }
 

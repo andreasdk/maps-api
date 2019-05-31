@@ -13,35 +13,32 @@ The purpose of the website is to be able to select a city, and see hotel, food a
 Here is a link to the [mockup.](***)
 
 #### User Stories
-* As a user, I want to have news so I can see any new updates
-* As a user, I want to be able to listen to music, and see artwork
-* As a user, I want to have streaming links to music so I can listen online
-* As a user, I want to have links to buy the music so I can listen offline
-* As a user, I want to be able to watch new music videos
-* As a user, I want to see information about any upcoming tours
-* As a user, I want to have links to buy tickets to attend a tour
-* As a user, I want to be able to subscribe to a newsletter to receive new updates from the singer
-* As a user, I want social media links so I can follow the singer online
-
+* As a user, I want to search for hotel information in a city
+* As a user, I want to search for bar information in a city
+* As a user, I want to search for restaurant and cafe information in a city
+* As a user, I want search for tourist attractions in a city
+* As a user, I want to be able to see this information displayed on a map
+* As a user, I want to have this information displayed on a table
 ---
 
 ## Features
 
 #### Existing Features
-* The first feature is a navbar, with links to each section of the page
-* Underneath the navbar, I included a hero image of Ariana Grande with no text to give a visual impact
-* The news section is made up of image cards with a short text overlay. Each card is clickable and brings the user to a relevant part of the page. When the user hovers over the card, the text fades and a relevant icon appears over the image.
-* The music section allows users to see information about current and past albums. On desktop view, the content in each row alternates position, while it stacks in mobile view. There is a link to Spotify for each album, and a dropdown button with links to music stores. The dropdown button is pushed slightly up on hover.
-* The video section includes a music video that scales responsively.
-* The tour section is made up of a table with dates, venue and city, and a link to buy tickets. The buy ticket link inverts color on hover.
-* There is a newsletter signup which prompts the user to enter their email and click on a submit button.
-* At the bottom of the page is a footer with social media links which users can click on and be directed to the respective page.
+* The first feature is a navbar, with a clickable logo, and links to the How It Works and Map Search sections. I didn't include the results section in the navbar because it is only visible when a user peforms a search.
+* The hero section has a background image of a city with an opaque gradient overlay. There is a button that directs to the map search section.
+* The how it works section explains the purpose of the page. On medium+ screens, there is a text column and an image column which alternate on each row. They are full width and stack on each other on small screens.
+* The map search section has a text input which is clickable to toggle a set of radio buttons. The text input is linked to an autocomplete function, and is used to select the city that the user wants to search in. It is required, and has a red bottom border on click until the user starts to type, and then the border turns yellow.
+* The radio buttons are set to display:none, and instead have pseudo radio buttons created in CSS positioned over them. The pseudo buttons can be click to select a category.
+* The reset button reinitializes the map, resets the radio button back to the accommodation option, and the autocomplete text back to 'Enter a location'
+* The map is zoomed out to show the whole world by default, and zooms in to the user selected city.
+* The map has markers which when clicked show information about a hotel/bar/cafe/restaurant/museum/art gallery/park.
+* The results table displays the assigned marker and the name of the establishments from the search.
 
 #### Features Left To Implement
-* I considered adding more text to the news section cards to make it really obvious what the cards were for, but ultimately scrapped it.
+* I considered adding more cells to the table, with information pulled from the info-window on the map. 
 
 #### Features Changed From Mockup
-* I had designed the hero image to be right aligned in desktop taking up half the screen, with a left-align about section taking up the other half. When I looked at the official Ariana Grande website, I noticed there is not much text, it's very image heavy. I decided that a user visiting her website would be aware of who she was and didn't go ahead with the about section, and changed the hero image to be take up the full height and width on all devices.
+* ***
 
 ---
 
@@ -49,11 +46,11 @@ Here is a link to the [mockup.](***)
 
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) is the markup language I used to create the website content.
 I tried to use semantic HTML where possible.
-* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) was used to style the content of the page. I used CSS to set colors, underline effects, headings, text, hover effects, positioning with flexbox, and to make content responsive.
+* [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) was used to style the content of the page. I used CSS to set colors, underline effects, headings, text, hover effects, to set CSS variables, and to make content responsive.
 * I used [Bootstrap 4](https://getbootstrap.com/) for responsive grid layout, alignment, column sizing, navigation and utilities.
 * I used [Google Fonts](https://fonts.google.com/) for the font families
-* I used [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery) to 
-
+* I used [jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery) to change the navbar background color on scroll, to connect the radio-buttons to a function, to hide the radio buttons until the user clicked on the autocomplete input, to reset the autocomplete value when the reset button is clicked
+* I used [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) from the Google Maps API website to generate the map
 ---
 
 ## Testing

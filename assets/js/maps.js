@@ -324,6 +324,7 @@ function initMap() {
 
       $("#reset").click(function(){
         $("#autocomplete").val("");
+        document.getElementById('results-heading').innerHTML = "";
       });
 
       // When the user selects a city, get the place details for the city and

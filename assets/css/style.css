@@ -140,10 +140,6 @@ body {
   top: 4rem;
 }
 
-.logo {
-  height: 3.5rem;
-}
-
 .text-box {
   position: absolute;
   top: 40%;
@@ -334,7 +330,7 @@ body {
     top:2rem;
   }
   .logo {
-    height: 2.5rem;
+    height: 3rem;
   }
   .heading-primary {
     margin-bottom: 3rem;

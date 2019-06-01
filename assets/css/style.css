@@ -184,16 +184,6 @@ body {
   font-family:var(--secondaryfont);
 }
 
-.paragraph:not(:last-child) {
-  margin-bottom: 3rem;
-}
-
-
-
-.composition:hover .composition__photo:not(:hover) {
-  transform: scale(.9);
-}
-
 .composition__photo {
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);

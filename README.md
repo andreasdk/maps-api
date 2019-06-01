@@ -10,7 +10,7 @@ I chose to make the Google Maps API project that allows a user to input a city a
 ## UX
 
 The purpose of the website is to be able to select a city, and see hotel, food and tourist attractions info displayed on a Google Map, and on a table
-Here is a link to the [mockup.](***)
+Here is a link to the [mockups.](https://github.com/andreasdk/maps-api/tree/master/assets/mockups)
 
 #### User Stories
 * As a user, I want to search for hotel information in a city

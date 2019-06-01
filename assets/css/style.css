@@ -3,6 +3,7 @@
   --primarycolor: #5A5560;
   --secondarycolor:#46344E;
   --lightcolor:#FAED26;
+  --backgroundcolor:#f7f7f7;
   --primaryfont:'Fjalla One', sans-serif;
   --secondaryfont:'Noto Sans', sans-serif;
 }
@@ -172,7 +173,7 @@ body {
 
 /***How-To***/
 .how-to {
-  background-color: #f7f7f7;
+  background-color: var(--backgroundcolor);
   padding: 2rem;
 }
 
@@ -202,7 +203,7 @@ body {
 
 /***Section-Filter***/
 .section-filter {
-  background-color: #f7f7f7;
+  background-color: var(--backgroundcolor);
   height: 30rem;
 }
 
@@ -267,7 +268,7 @@ body {
 /***Section-Map***/
 
 .section-map {
-  background-color: #f7f7f7;
+  background-color: var(--backgroundcolor);
 }
 
 #map {
@@ -296,7 +297,7 @@ body {
 /**Section-Results**/
 
 .section-results {
-  background-color: #f7f7f7;
+  background-color: var(--backgroundcolor);
   padding: 5rem;
 }
 

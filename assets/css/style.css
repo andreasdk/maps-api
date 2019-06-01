@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  background-color: var(--backgroundcolor);
   font-family: var(--primaryfont);
   font-weight: 400;
   line-height: 1.7;
@@ -73,6 +74,10 @@ body {
 
 .u-margin-bottom-large {
   margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 2rem;
 }
 
 .u-margin-bottom-small {
@@ -169,7 +174,6 @@ body {
 
 /***How-To***/
 .how-to {
-  background-color: var(--backgroundcolor);
   padding: 2rem;
 }
 
@@ -199,7 +203,6 @@ body {
 
 /***Section-Filter***/
 .section-filter {
-  background-color: var(--backgroundcolor);
   height: 30rem;
 }
 
@@ -262,11 +265,6 @@ body {
 
 
 /***Section-Map***/
-
-.section-map {
-  background-color: var(--backgroundcolor);
-}
-
 #map {
   height: 50rem; 
 }
@@ -293,7 +291,6 @@ body {
 /**Section-Results**/
 
 .section-results {
-  background-color: var(--backgroundcolor);
   padding: 5rem;
 }
 

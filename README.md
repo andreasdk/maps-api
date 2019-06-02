@@ -85,7 +85,12 @@ I tried to use semantic HTML where possible.
 * I validated my CSS code with [WC3 CSS Validator](https://jigsaw.w3.org/css-validator/) and the CSS variables declarations and where they are used throw up errors, but apparently this is normal behaviour as CSS variables are not yet recognized by WC3. The rest of the CSS code validates without error.
 * I used [Esprima](http://esprima.org/demo/validate.html) to validate the maps.js file, and the result was that the code was syntactically valid.
 
-* I used Chrome development tools to test how my website looked on mobile and desktop. I also used c9 as a sort of sandbox for ideas I had, to see how they would look on the site.
+* I used Chrome development tools to test how my website looked on mobile and desktop, and to check for errors when executing functions.
+* I tested the autocomplete function to see if it suggested cities when I type in some letters and it passed
+* On inputting a city, the map populates with markers. Each marker corresponds to a different establishment, and clicking the marker gives information about the establishment name, website, address, type, phone number and star rating. &#10004;
+* Inputting a city generated a table with cells for the marker and the name of the  corresponding establishment &#10004;
+* Changing the category clears the markers and replaces them with new ones. &#10004;
+* Clicking the reset button reinitializes the map, clears the autocomplete input, sets the radio-buttons back to the default checked option, and removes the results heading and table. &#10004;
 
 #### Changes Made From Testing
 * Overflow-x to hidden

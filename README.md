@@ -148,7 +148,10 @@ I tried to use semantic HTML where possible.
 * [Museum image](https://unsplash.com/photos/oLhTLD-RBsc)
 
 #### Acknowledgements
-
+* I received inspiration for this project from Advanced CSS And Sass on Udemy, the navbar animation, the search input warning border, the pseudo radio-buttons, and the utility classes.
+* I used code found on [Stack Overflow](https://stackoverflow.com/questions/56285748/cannot-read-property-setmap-of-undefined-in-google-maps-api) to fix the setMap error on reset.
+* My mentor also helped me out with UX improvement suggestions, such as hiding the radio buttons until a user clicks on the search input, and placing the search filter above the map.
+* I also got tips from the Code Institute Slack groups
 
 
 

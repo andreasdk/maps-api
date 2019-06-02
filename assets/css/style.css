@@ -41,7 +41,6 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
-
   margin-top: 12rem;
 }
 
@@ -94,13 +93,17 @@ body {
 
 
 /***Navbar**/
+/**Changes navbar background color on scroll**/
 .navbar.scrolled {
   background-color: var(--secondarycolor);
-  transition: background 60ms;
+  transition: background 090ms;
 }
-
+/**Changes navbar toggler background to circle**/
 .navbar-toggler {
   background-color: #f7f7f7;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .navbar-light .navbar-nav .nav-link:link,
@@ -116,18 +119,17 @@ body {
   text-transform: uppercase;
   transition: all .4s;
 }
-
+/**Navbar link items animation on hover**/
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:active {
   background-position: 100%;
   color:var(--primarycolor);
   transform: translateX(2rem);
 }
-
+/**Navbar icons display and margin**/
 .nav-link span {
   display: inline-block;
   margin-right: 1.5rem;
-
 }
 
 /***Header**/
@@ -138,13 +140,13 @@ body {
   background-size: cover;
   height: 95vh; 
 }
-
+/**Positions logo in the top left corner**/
 .logo-box {
   position: absolute;
   left: 4rem;
   top: 4rem;
 }
-
+/**Centres the text box horizontally**/
 .text-box {
   position: absolute;
   top: 40%;
@@ -152,8 +154,7 @@ body {
   text-align: center;
   transform: translate(-50%, -50%);
 }
-
-
+/**Hero button**/
 .btn {
   border-radius: 10rem;
   display: inline-block;
@@ -162,7 +163,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+/**Gives slight box-shadow on hover**/
 .btn:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
@@ -173,23 +174,21 @@ body {
 }
 
 /***How-To***/
+/**Section has all over padding**/
 .how-to {
   padding: 2rem;
 }
 
-
 .paragraph {
   color: inherit;
-  font-size:1.6rem;
+  font-size: 1.6rem;
   font-family:var(--secondaryfont);
 }
-
+/**Images are slightly rounded with a box-shadow**/
 .composition__photo {
   border-radius: 2px;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
 }
-
-
 
 /***Section-Filter***/
 .section-filter {
@@ -199,7 +198,7 @@ body {
 .form-group {
   margin-top: 4rem;
 }
-
+/**Set to display:none until user clicks on the search input**/
 #radio-filter {
   display: none;
 }
@@ -215,7 +214,7 @@ body {
   padding-left: 4rem;
   position: relative;
 }
-
+/**Pseudo radio-button styles outer**/
 .filter-radio-button {
   border: 5px solid var(--lightcolor);
   border-radius: 50%;
@@ -226,7 +225,7 @@ body {
   top: -.4rem;
   width: 3rem;
 }
-
+/**Pseudo radio-button styles inner**/
 .filter-radio-button::after {
   background-color: var(--lightcolor);
   border-radius: 50%;
@@ -242,7 +241,7 @@ body {
   width: 1.3rem;
 }
 
-/*Select sibling element, then child*/
+/*Select sibling element, then child. Created checked effect on click*/
 .form-check-input:checked ~ .form-check-label .filter-radio-button:after {
   opacity: 1;
 }
@@ -253,8 +252,8 @@ body {
   margin-top: 1.6rem;
 }
 
-
 /***Section-Map***/
+/**Map height must be set for map to appear**/
 #map {
   height: 50rem; 
 }
@@ -267,13 +266,13 @@ body {
   padding: 2rem 2rem;
   width: 100%; 
 }
-
+/**Bottom border turns positive color when user types in search input**/
 .search-input:focus {
   outline: none;
   border-bottom: 5px solid var(--lightcolor);
   box-shadow: 0.1rem 1rem rgba(0, 0, 0, 0.1);
 }
-
+/**Search input is required, border-bottom appears red until user types in search input**/
 .search-input:focus:invalid {
   border-bottom: 3px solid #ff0000;
 }
@@ -281,7 +280,7 @@ body {
 #info-content {
   font-family: var(--secondaryfont);
 }
-
+/**Setting width of info-window category icon**/
 .gm-style img {
   width: 5rem;
 }
@@ -291,7 +290,7 @@ body {
 .section-results {
   padding: 5rem;
 }
-
+/**Setting table text color, font-size and making it take up 100% of available space**/
 #resultsTable {
   color: var(--lightcolor);
   font-size: 1.6rem;
@@ -299,13 +298,14 @@ body {
 }
 
 /**Footer**/
+/**Centering footer items, and giving footer minimum height**/
 .footer {
   background-color: var(--primarycolor);
   display: flex;
   justify-content: center;
   min-height: 10rem;
 }
-
+/**Setting footer items color, size and top padding**/
 .footer-icon a i {
   color: var(--lightcolor);
   font-size: 4rem;

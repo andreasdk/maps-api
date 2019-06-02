@@ -278,6 +278,14 @@ body {
   border-bottom: 3px solid #ff0000;
 }
 
+#info-content {
+  font-family: var(--secondaryfont);
+}
+
+.gm-style img {
+  width: 5rem;
+}
+
 /**Section-Results**/
 
 .section-results {

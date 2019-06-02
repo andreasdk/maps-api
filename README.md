@@ -11,7 +11,33 @@ I chose to make the Google Maps API project that allows a user to input a city a
 
 The purpose of the website is to be able to select a city, and see hotel, food and tourist attractions info displayed on a Google Map, and on a table
 Here is a link to the [mockups folder.](https://github.com/andreasdk/maps-api/tree/master/assets/mockups)
+
 * [Navbar Initial State Desktop](assets/mockups/Navbar_Initial_Desktop.png)
+* [Navbar Animation](assets/mockups/Navbar_Animation.png)
+* [Navbar Initial State Mobile](assets/mockups/Navbar_Initial_Mobile.png)
+* [Navbar Mobile Toggle](assets/mockups/Navbar_Mobile_Toggle.png)
+
+* [Hero Initial State](assets/mockups/Hero_Desktop_Initial.png)
+* [Hero Button Hover](assets/mockups/Hero_Desktop_Button_Hover.png)
+
+
+* [How It Works Desktop](assets/mockups/How_It_Works_Desktop.png)
+* [How It Works Mobile](assets/mockups/How_It_Works_Mobile.png)
+
+
+* [Search Desktop Initial State](assets/mockups/Filter.png)
+* [Search Desktop Search Input Click](assets/mockups/Filter_SearchInput_Click.png)
+* [Search Mobile Initial State](assets/mockups/Filter_Mobile_Initial.png)
+* [Search Mobile Search Input Click](assets/mockups/Filter_Mobile_Click.png)
+
+* [Map Desktop](assets/mockups/Map_Deskop.png)
+* [Map Mobile](assets/mockups/Map_Mobile.png)
+
+* [Results Desktop](assets/mockups/Results.png)
+* [Results Mobile](assets/mockups/Results_Mobile.png)
+
+* [Footer](assets/mockups/Footer.png)
+
 
 #### User Stories
 * As a user, I want to search for hotel information in a city

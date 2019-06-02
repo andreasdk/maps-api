@@ -11,6 +11,13 @@ function resetbtn() {
   clearResults();
   initMap();
 }
+//adds the 'scrolled' class to the navbar on scroll, changing the nav background color
+$(function () {
+  $(document).scroll(function(){
+    var $nav = $("#navbar__travel");
+    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
+  })
+})
 
 // initializes map
 function initMap() {

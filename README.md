@@ -67,9 +67,6 @@ Here is a link to the [mockups folder.](https://github.com/andreasdk/maps-api/tr
 #### Features Left To Implement
 * I considered adding more cells to the table, with information pulled from the info-window on the map (websites, phone number, star rating). 
 
-#### Features Changed From Mockup
-* I had initially used Material Design
-
 ---
 
 ## Technologies Used

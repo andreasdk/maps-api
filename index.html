@@ -26,7 +26,7 @@
 					<a class="nav-link" href="#how"><span><i class="fas fa-question"></i></span>How It Works</a>
 				</li>
 				<li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
-					<a class="nav-link" href="#map"><span><i class="fas fa-map-marked"></i></span>Map Search</a>
+					<a class="nav-link" href="#filter"><span><i class="fas fa-map-marked"></i></span>Map Search</a>
 				</li>
 			</ul>
 		</div>
@@ -56,9 +56,11 @@
 			</div>
 		</div>
 		<div class="row align-items-center text-center u-margin-bottom-large">
+			<!--This column is placed 1st on medium screens and above, 2nd on smaller screens-->
 			<div class="col-md-6 order-2 order-md-1">
 				<img src="assets/images/bar.jpg" alt="Bars" class="composition__photo img-fluid">
 			</div>
+			<!--This column is placed 2nd on medium screens and above, 1st on smaller screens-->
 			<div class="col-md-6 order-1 order-md-2">
 				<h3 class="heading-tertiary u-margin-bottom-small">Bars & Restaurants</h3>
 				<p class="paragraph">Maybe you're looking for something to eat or drink on your trip? Then click on the search input, enter a city name, and then select either bar or restaurant. When you complete a search, you can also see a list of business names underneath the map. </p>
@@ -84,9 +86,11 @@
 				<form class="text-center" id="form">
 					<div class="form-group">
 						<div id="locationField">
+							<!--Making input required because it's essential to perform a search-->
 							<input id="autocomplete" type="text" class="form-control search-input" required />
 						</div>	
 					</div>
+					<!--Radio Buttons-->
 					<div class="form-group" id="radio-filter">
 						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="radio" name="inlineRadioOptions" id="accommodation">
@@ -132,6 +136,7 @@
 		</div>
 		<div class="row">
 			<div class="col-12">
+				<!--Results table is generated when user performs a search-->
 				<div id="listing">
 					<table id="resultsTable">
 						<tbody id="results"></tbody>
@@ -155,7 +160,7 @@
 		</div>
 	</footer>
 
-	<!--Info window that display on map after a search is performed-->
+	<!--Info window that displays on map after a search is performed-->
 	<div style="display: none">
 		<div id="info-content">
 			<table>

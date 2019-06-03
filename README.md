@@ -9,7 +9,10 @@ I chose to make the Google Maps API project that allows a user to input a city a
 
 ## UX
 
-The purpose of the website is to be able to select a city, and see hotel, food and tourist attractions info displayed on a Google Map, and on a table
+* The purpose of the website is to be able to select a city, and see hotel, food and tourist attractions info displayed on a Google Map, and on a table. I had implemented animations I learned from a Udemy CSS course, then modified them to suit my design - specifically the hover effect on the navbar items. 
+* I added the 'how it works' section, so I could include some images to make the site look more visually interesting, and so it didn't consist solely of a search bar and map. I searched online for the color scheme, and then I played around with some custom map layout from snazzymaps until I found one that suited the website. I also changed the results table alternating row colors to match the color scheme. 
+
+
 Here is a link to the [mockups folder.](https://github.com/andreasdk/maps-api/tree/master/assets/mockups)
 
 * [Navbar Initial State Desktop](assets/mockups/Navbar_Initial_Desktop.png)
@@ -65,7 +68,7 @@ Here is a link to the [mockups folder.](https://github.com/andreasdk/maps-api/tr
 * I considered adding more cells to the table, with information pulled from the info-window on the map (websites, phone number, star rating). 
 
 #### Features Changed From Mockup
-* ***
+* I had initially used Material Design
 
 ---
 

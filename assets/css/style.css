@@ -333,16 +333,6 @@ body {
   .header {
     height: 75vh;
   }
-  .heading-primary-main {
-    font-size: 1.5rem;
-    letter-spacing: 2rem;
-    margin-top: 0;
-  }
-  .heading-primary-sub {
-    font-size: 1.25rem;
-    letter-spacing: .25rem;
-    margin-top: .5rem;
-  }
   .paragraph {
     margin-bottom: 3rem;
   }

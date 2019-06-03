@@ -195,6 +195,24 @@ body {
   height: 30rem;
 }
 
+.search-input {
+  font-family: inherit;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding: 2rem 2rem;
+  width: 100%; 
+}
+/**Bottom border turns positive color when user types in search input**/
+.search-input:focus {
+  outline: none;
+  border-bottom: 5px solid var(--lightcolor);
+  box-shadow: 0.1rem 1rem rgba(0, 0, 0, 0.1);
+}
+/**Search input is required, border-bottom appears red until user types in search input**/
+.search-input:focus:invalid {
+  border-bottom: 3px solid #ff0000;
+}
+
 .form-group {
   margin-top: 4rem;
 }
@@ -256,25 +274,6 @@ body {
 /**Map height must be set for map to appear**/
 #map {
   height: 50rem; 
-}
-
-.search-input {
-  border:none;
-  font-family: inherit;
-  font-size: 2rem;
-  margin-top: 2rem;
-  padding: 2rem 2rem;
-  width: 100%; 
-}
-/**Bottom border turns positive color when user types in search input**/
-.search-input:focus {
-  outline: none;
-  border-bottom: 5px solid var(--lightcolor);
-  box-shadow: 0.1rem 1rem rgba(0, 0, 0, 0.1);
-}
-/**Search input is required, border-bottom appears red until user types in search input**/
-.search-input:focus:invalid {
-  border-bottom: 3px solid #ff0000;
 }
 
 #info-content {
